@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>let and const real world</title>
+</head>
+<body>
+<script>
+
+  // The Temporal Dead Zone
+  console.log(pizza);	//<-- We get a ReferenceError: pizza is not defined
+  /*
+	This is Temporal Dead Zone
+	
+	Trying to access `pizza`, before the const `pizza` statement is reached  throws error
+  */
+  const pizza = 'Deep Dish';
+  
+  // This snippet won't throw because return `food` isn't executed until after `food` leaves the Temporal Dead Zone
+  function eat () {
+	return food;
+  }
+  /*
+	This is Temporal Dead Zone
+	eat() function is not executed yet
+  */
+  const food = 'pizza';
+  console.log(eat());	//<-- We left dead zone, now eat() is executed. so no errors.
+
+</script>
+</body>
+</html>

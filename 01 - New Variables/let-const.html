@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>let and const</title>
+</head>
+<body>
+<script>
+  const key = 'abc123';
+  let points = 50;
+  let winner = false;
+
+  const person = {
+    name: 'Wes',
+    age: 28
+  }
+
+  // Object.freeze() method freezes an object
+  // Prevents new properties from being added to it
+  // prevents existing properties from being removed
+  // prevents existing properties, or their enumerability, configurability, or writability, from being changed
+  const wes = Object.freeze(person);
+  wes.age = 29;
+  console.log(wes.age);
+
+</script>
+</body>
+</html>

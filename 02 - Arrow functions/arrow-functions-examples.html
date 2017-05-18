@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow functions examples</title>
+</head>
+<body>
+<script>
+
+const race = '100m Dash';
+const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos'];
+
+const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}));
+
+const ages = [23,62,45,34,2,72,234,87,34];
+ages.sort((a, b) => a - b);
+// Result<-- [2, 23, 34, 34, 45, 62, 72, 87, 234]
+
+
+// Using Arrow function here like `param => expression` 
+const old = ages.filter(age => age >= 60);
+console.log(old);
+
+</script>
+</body>
+</html>

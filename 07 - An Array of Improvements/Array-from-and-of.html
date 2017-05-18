@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array .from() and .of()</title>
+</head>
+  <div class="people">
+    <p>Wes</p>
+    <p>Kait</p>
+    <p>Snickers</p>
+  </div>
+<body>
+<script>
+  const people = document.querySelectorAll('.people p');
+  const peopleArray = Array.from(people, person => {
+    //console.log(person);
+    return person.textContent;
+  });
+  
+  console.group('peopleArray');
+  console.log(peopleArray);
+  console.groupEnd('peopleArray');
+  //const names = people.map(person => person.textContent);
+
+  function sumAll() {
+    const nums = Array.from(arguments);
+	
+	console.group('arguments');
+	console.log(nums);
+	console.groupEnd('arguments');
+	
+    return nums.reduce((prev, next) => prev + next, 0);
+  }
+
+  sumAll(2, 34, 23, 34, 18, 42);
+  const ages = Array.of(12,4,23,62,34);
+  
+  console.group('ages');
+  console.log(ages);
+  console.groupEnd('ages');
+
+</script>
+</body>
+</html>

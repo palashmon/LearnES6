@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow functions → → </title>
+</head>
+<body>
+<script>
+  const names = ['wes', 'kait', 'lux'];
+
+  // Simple function
+  const fullNames = names.map(function(name) {
+    return `${name} bos`;
+  });
+
+  // Arrow function with name parameter (param1, param2) => {...}
+  const fullNames2 = names.map((name) => {
+    return `${name} bos`;
+  });
+
+  // If we have only one param then () are not needed, just use `name => {...}`
+  const fullNames3 = names.map(name => {
+    return `${name} bos`;
+  });
+
+  // Arrow function with implicit return
+  const fullNames4 = names.map(name => `${name} bos`);
+
+  // If there is no param, then we can simply do `() => expression`
+  const fullNames5 = names.map(() => `cool bos`);
+
+  // Anonymous function
+  const sayMyName = (name) => {
+    alert(`Hello ${name}!`)
+  }
+
+  sayMyName('Wes');
+
+</script>
+</body>
+</html>

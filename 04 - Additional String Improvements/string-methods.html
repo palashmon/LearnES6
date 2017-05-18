@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New String Methods</title>
+</head>
+<body>
+
+<script>
+
+const course = 'RFB2';
+const flightNumber = '20-AC2018-jz';
+const accountNumber = '825242631RT0001';
+
+const make = 'BMW';
+const model = 'x5';
+const colour = 'Royal Blue';
+
+// .startsWith()
+// course.startsWith('RF')	<-- true
+// course.startsWith('rf')	<-- false, this method is case-sensitive
+// course.startsWith('FB')	<-- false
+
+// .endsWith()
+// flightNumber.endsWith('jz')	<-- true
+// flightNumber.endsWith('JZ')	<-- false, this method is case-sensitive
+// flightNumber.endsWith('AC')	<-- false
+
+// .includes()
+// accountNumber.includes('RT')	<-- true
+// accountNumber.includes('rt')	<-- false, this method is case-sensitive
+
+// .repeat()
+// '2'.repeat(5)	<-- 22222
+
+function leftPad(str, length = 20) {
+  return `→ ${' '.repeat(length - str.length)}${str}`;
+}
+
+console.log(leftPad(make));
+console.log(leftPad(model));
+console.log(leftPad(colour));
+
+
+</script>
+
+</body>
+</html>

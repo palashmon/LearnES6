@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>let and const</title>
+</head>
+<body>
+<script>
+  function setWidth() {
+    var width = 100;
+    console.log(width);
+  }
+  //<-- `width` is not accessible here, as var is function scope
+  setWidth();
+
+  var age = 100;
+  if(age > 12) {
+    const dogYears = age * 7;
+    console.log(`You are ${dogYears} dog years old!`);
+  }
+  //<-- `dogYears` is not accessible here, as var is block scope
+  
+  let height = 200;
+  const key = 'abc123';
+  
+  // height = 201 works fine, as we can reassign it
+  // key = 'abc1234' wil not work fine, as we can only assign const variables once
+  
+</script>
+</body>
+</html>
