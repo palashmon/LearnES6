@@ -67,7 +67,10 @@ Completed Module #7 - An Array of Array Improvements
  - Use Case 2 for Array.prototype [`.some()` & `.every()`](https://pbs.twimg.com/media/DAHdt4YU0AAv31R.jpg)
  
 ### Day 7: 19 May 2017
+Completed Module #8 - ay Hello to ...Spread and ...Rest  
+**Thoughts:**  
+ - Learnt about ...Spread operator & ...Rest parameters and there various use cases with lots of examples
+ - Some use cases for [`Rest parameters`](https://pbs.twimg.com/media/DAMnqDdUwAYmYes.jpg)
 
-
-
+### Day 8: 20 May 2017
  

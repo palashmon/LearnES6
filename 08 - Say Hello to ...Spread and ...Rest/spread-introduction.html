@@ -12,13 +12,27 @@
 
   const pizzas = [...featured, 'veg', ...specialty];
   const fridayPizzas = [...pizzas];
-
+  
+  // See value of pizzas here 
+  console.group('Pizzas');
+  console.log(pizzas);
+  console.groupEnd('Pizzas');
+  
+  // See value of friday Pizzas here
+  console.group('Friday Pizzas');
+  console.log(fridayPizzas);
+  console.groupEnd('Friday Pizzas');
+  
   const deepDish = {
     pizzaName: 'Deep Dish',
     size: 'Medium',
     ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
   };
 
+  console.group('DeepDish ingredients');
+  console.log([...deepDish.ingredients]);
+  console.groupEnd('DeepDish ingredients');
+  
 </script>
 </body>
 </html>

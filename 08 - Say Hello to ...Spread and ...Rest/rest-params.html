@@ -16,11 +16,19 @@
 
   const runner = ['Wes Bos', 123, 5.5, 5, 3, 6, 35];
   const [name, id, ...runs] = runner;
+  
+  // View the variables here from ...rest param
+  console.group('runner');
   console.log(name, id, runs);
+  console.groupEnd('runner');
 
   const team = ['Wes', 'Kait', 'Lux', 'Sheena', 'Kelly'];
   const [captian, assistant, ...players] = team;
-  console.log(captian, assistant, players)
+  
+  // View the variables here from ...rest param
+  console.group('team');
+  console.log(captian, assistant, players);
+  console.groupEnd('team');
 
 </script>
 </body>
