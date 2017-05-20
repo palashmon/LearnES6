@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chaining Promises</title>
+  <title>Multiple Promises</title>
 </head>
 <body>
 <script>
@@ -25,7 +25,8 @@
   //     console.log(weatherInfo, tweetInfo)
   //   });
 
-  const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
+  //const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
+  const postsPromise = fetch('https://api.sunrise-sunset.org/json?lat=45.4132457&lng=-75.6908846');
   const streetCarsPromise = fetch('http://data.ratp.fr/api/datasets/1.0/search/?q=paris');
 
   Promise
@@ -34,7 +35,19 @@
       return Promise.all(responses.map(res => res.json()))
     })
     .then(responses => {
-      console.log(responses);
+      //console.log(responses);
+	  const [post, streetCars] = responses;
+	  
+	  console.group('post');
+	  console.log(post);
+	  console.groupEnd('post');
+	  
+	  console.log(' ');
+	  
+	  console.group('streetCars');
+	  console.log(streetCars);
+	  console.groupEnd('streetCars');
+	  
     });
 
 </script>

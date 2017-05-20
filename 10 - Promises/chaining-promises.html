@@ -30,7 +30,7 @@
         } else {
           reject(Error('No Post Was Found!'));
         }
-      }, 200);
+      }, 500);
     });
   }
 
@@ -49,6 +49,15 @@
     });
   }
 
+  // Test error
+  /*
+  getPostById(5)
+	.then(post => hydrateAuthor(post))
+	.then(post => console.log(post))
+	.catch(err => console.error(err));
+  */
+	
+  // Test success
   getPostById(3)
     .then(post => {
       return hydrateAuthor(post);

@@ -67,10 +67,21 @@ Completed Module #7 - An Array of Array Improvements
  - Use Case 2 for Array.prototype [`.some()` & `.every()`](https://pbs.twimg.com/media/DAHdt4YU0AAv31R.jpg)
  
 ### Day 7: 19 May 2017
-Completed Module #8 - ay Hello to ...Spread and ...Rest  
+Completed Module #8 - Say Hello to ...Spread and ...Rest  
 **Thoughts:**  
  - Learnt about ...Spread operator & ...Rest parameters and there various use cases with lots of examples
  - Some use cases for [`Rest parameters`](https://pbs.twimg.com/media/DAMnqDdUwAYmYes.jpg)
 
 ### Day 8: 20 May 2017
+Completed Module #9 - Object Literal Upgrades
+**Thoughts:**  
+ - Learnt about some handy stuffs like property value shorthand, method definition shorthand and computed property keys
+ 
+Completed Module #10 - Promises
+**Thoughts:**  
+ - Learnt about how Promises works, creating my own promises, chaining them and working with multiple promises 
+ - As the Promise.prototype.then() and Promise.prototype.catch() methods return promises, they can be chained like
+ - [Chaining promises](https://pbs.twimg.com/media/DAP3qFIVYAA2tPp.jpg)
+
+### Day 9: 21 May 2017
  

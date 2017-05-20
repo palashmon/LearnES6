@@ -6,13 +6,20 @@
 </head>
 <body>
 <script>
-  const p = new Promise((resolve, reject) => {
+  const myFirstPromise = new Promise((resolve, reject) => {
+  
+    // For testing resolve
+    //setTimeout(() => {
+    //  resolve('Wes is cool');
+    //}, 1000);
+  
+    // For testing reject
     setTimeout(() => {
       reject(Error('Err wes isn\'t cool'));
     }, 1000);
   });
 
-  p
+  myFirstPromise
     .then(data => {
       console.log(data);
     })
