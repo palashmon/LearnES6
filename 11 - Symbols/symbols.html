@@ -9,19 +9,29 @@
   const wes = Symbol('Wes');
   const person = Symbol('Wes');
 
+  console.group('Unique Symbols');
+  console.log(wes === person);
+  console.log(wes == person);
+  console.groupEnd('Unique Symbols');
+  
   const classRoom = {
     [Symbol('Mark')] : { grade: 50, gender: 'male' },
     [Symbol('olivia')]: { grade: 80, gender: 'female' },
     [Symbol('olivia')]: { grade: 80, gender: 'female' },
   };
 
+  console.group('classRoom Symbols');
   for (const person in classRoom) {
     console.log(person);
   }
-
+  console.groupEnd('classRoom Symbols');
+  
   const syms = Object.getOwnPropertySymbols(classRoom);
   const data = syms.map(sym => classRoom[sym]);
+  
+  console.group('getOwnPropertySymbols');
   console.log(data);
+  console.groupEnd('getOwnPropertySymbols');
 
 </script>
 </body>

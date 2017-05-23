@@ -83,5 +83,12 @@ Completed Module #10 - Promises
  - As the Promise.prototype.then() and Promise.prototype.catch() methods return promises, they can be chained like
  - [Chaining promises](https://pbs.twimg.com/media/DAP3qFIVYAA2tPp.jpg)
 
-### Day 9: 21 May 2017
+### Day 9: 23 May 2017
+Completed Module #11 - Symbols (Newest primitive data type)
+**Thoughts:**  
+ - Learnt about Symbol data type and various use cases.
+ - We can use it as object key as [unique identifier](https://pbs.twimg.com/media/DAhIFkYW0AAXLhD.jpg)
+
+
+### Day 10: 24 May 2017
  
