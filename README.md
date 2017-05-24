@@ -90,5 +90,13 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - We can use it as object key as [unique identifier](https://pbs.twimg.com/media/DAhIFkYW0AAXLhD.jpg)
 
 
+### Day 11: 24 May 2017
+**Thoughts:**  
+ - Learnt about [ESLint](http://eslint.org/) and it's [usability](http://eslint.org/demo/)
+ - Also, looked into the [Airbnb's settings](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and did some practice
+ - Looked into various [ESLint rules](http://eslint.org/docs/rules/) and tried to understand their importance and when to use them.
+
 ### Day 10: 24 May 2017
+
+
  

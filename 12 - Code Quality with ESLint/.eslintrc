@@ -1,12 +1,27 @@
 {
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-  "extends": "airbnb",
-  "rules": {
-    "no-console": 0,
-    "no-unused-vars": 1
-  },
-  "plugins": ["html", "markdown"]
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true
+		},
+   
+    "rules": {
+			"no-unused-vars": [1,{"argsIgnorePartern": "res|next|~err"}],
+			"arrow-body-style": [2, "as-needed"],
+			"linebreak-style": [2, "windows"],
+			"no-param-reassign": [2, { "props": false }],
+			"no-console": 0,
+			"import": 0,
+			"func-names": 0,
+			"space-before-function-paren": 0,
+			"comma-dangle": 0,
+			"max-len": 0,
+			"no-underscore-dangle": 0,
+			"react/prefer-es6-class": 0,
+			"radix": 0,
+			"default-case": 0,
+			"no-else-return": 0,
+			"quotes": 0
+    }
 }
