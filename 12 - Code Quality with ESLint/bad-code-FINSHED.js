@@ -1,3 +1,6 @@
+
+/* global var1, var2 */
+
 const weather = new Promise((resolve) => {
   setTimeout(() => {
     resolve({ temp: 29, conditions: 'Sunny with Clouds' });
@@ -26,3 +29,9 @@ Promise
     .then((responses) => {
       console.log(responses);
     });
+
+/* eslint-disable */
+
+alert('foo');
+
+/* eslint-enable */
