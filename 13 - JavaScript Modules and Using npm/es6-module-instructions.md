@@ -4,6 +4,19 @@
 npm install webpack@beta babel-loader babel-core babel-preset-es2015-native-modules --save-dev
 ```
 
+Current:  
+
+```bash
+npm install webpack babel-loader babel-core babel-preset-es2015-native-modules --save-dev
+```
+
+Or use shorthand:  
+
+```bash
+npm i -S flickity insane jquery jsonp lodash slug
+npm i -D webpack babel-loader babel-core babel-preset-es2015-native-modules
+```
+
 2. Then, Create a `webpack.config.js` file:
 
 ```js

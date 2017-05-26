@@ -1,0 +1,26 @@
+{
+  "name": "es6modules",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --progress --watch"
+  },
+  "author": "Palash Mondal <palashm@live.in>",
+  "license": "MIT",
+  "dependencies": {
+    "flickity": "2.0.7",
+    "insane": "2.6.2",
+    "jquery": "3.2.1",
+    "jsonp": "0.2.1",
+    "lodash": "4.17.4",
+    "slug": "0.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-es2015-native-modules": "6.9.4",
+    "webpack": "2.6.1"
+  }
+}

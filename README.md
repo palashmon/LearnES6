@@ -103,6 +103,7 @@ Completed Module #11 - Symbols (Newest primitive data type)
 
 
 ### Day 12: 26 May 2017
-
-
+**Thoughts:**  
+ - Completed Module #12 - Code Quality with ESLint
+ - Today learnt about JavaScript modules and WebPack 2 tooling setup
  
