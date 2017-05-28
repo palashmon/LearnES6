@@ -114,8 +114,11 @@ Completed Module #11 - Symbols (Newest primitive data type)
  
  
 ### Day 14: 28 May 2017
-**Thoughts:**  
+**Thoughts:** 
+ - Completed Module #13 - JavaScript Modules and Using npm
  - Did more practice on ES6 Modules
  - Learnt about how to import specific modules when its needed
 
 ### Day 15: 29 May 2017
+**Thoughts:**  
+ - 
