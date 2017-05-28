@@ -107,11 +107,15 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Completed Module #12 - Code Quality with ESLint
  - Today learnt about JavaScript modules and WebPack 2 tooling setup
  
-### Day 13: 26 May 2017
+### Day 13: 27 May 2017
 **Thoughts:**  
  - Learnt about creating our own JavaScript modules and importing/exporting them
  - Also, looked into [export statement](https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export) and various syntax.
  
  
- ### Day 14: 26 May 2017
- 
+### Day 14: 28 May 2017
+**Thoughts:**  
+ - Did more practice on ES6 Modules
+ - Learnt about how to import specific modules when its needed
+
+### Day 15: 29 May 2017
