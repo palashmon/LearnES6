@@ -28,6 +28,18 @@
 
   movies.add({ name: 'Titanic', stars: 5 });
 
+	console.group('After movies add');
+  console.table(movies);
+  console.groupEnd('After movies add');
+
+	console.group('Top Rated 10');
+  console.table(movies.topRated());
+  console.groupEnd('Top Rated 10');
+
+	console.group('Top Rated 2');
+  console.table(movies.topRated(2));
+  console.groupEnd('Top Rated 2');
+
 </script>
 </body>
 </html>

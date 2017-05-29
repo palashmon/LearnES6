@@ -123,7 +123,12 @@ Completed Module #11 - Symbols (Newest primitive data type)
 **Thoughts:**  
  - Completed Module #14 - ES6 Tooling
  - Learnt about SystemJS, Babel & [Polyfills](https://polyfill.io/v2/docs/) for ES6
- - Polyfills gives very good coverage for all ES6 features in old browsers
+ - Polyfills gives very good coverage for all ES6 features in old browsers  
+  
+ - Completed Module #15 - Classes
+ - Learnt about creating a new class (declaration-form), defining static methods & prototype methods, get & set methods
+ - Also, learnt about extending an existing class, subclassing methods of a parent class and subclassing built-ins
+ - Simple use case for Subclassing built-in classes and DOM [here](https://pbs.twimg.com/media/DBAfi7pUIAAupmH.jpg)
 
 ### Day 16: 30 May 2017
  

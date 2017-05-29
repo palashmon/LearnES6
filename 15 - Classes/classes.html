@@ -6,18 +6,42 @@
 </head>
 <body>
 <script>
-  function Dog(name, breed) {
-    this.name = name;
-    this.breed = breed;
+  class Dog {
+    constructor(name, breed) {
+      this.name = name;
+      this.breed = breed;
+    }
+
+		// snickers.bark()
+    bark() {
+      console.log(`Bark Bark! My name is ${this.name}`)
+    }
+
+		// snickers.cuddle()
+    cuddle() {
+      console.log(`I love you owner!`);
+    }
+
+		//  Dog.info()
+    static info() {
+      console.log('A dog is better than a cat by 10 times');
+    }
+
+		// snickers.description
+    get description() {
+      return `${this.name} is a ${this.breed} type of dog`;
+    }
+
+		// snickers.nicknames = '  Snicky  '
+    set nicknames(value) {
+      this.nick = value.trim();
+    }
+
+		// snickers.nicknames
+    get nicknames() {
+      return this.nick ? this.nick.toUpperCase() : `Nickname for ${this.name} is not set yet!`;
+    }
   }
-
-  Dog.prototype.bark = function() {
-    console.log(`Bark Bark! My name is ${this.name}`);
-  };
-
-  Dog.prototype.cuddle = function() {
-    console.log(`I love you owner!`);
-  };
 
   const snickers = new Dog('Snickers', 'King Charles');
   const sunny = new Dog('Sunny', 'Golden Doodle');
