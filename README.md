@@ -121,4 +121,11 @@ Completed Module #11 - Symbols (Newest primitive data type)
 
 ### Day 15: 29 May 2017
 **Thoughts:**  
- - 
+ - Completed Module #14 - ES6 Tooling
+ - Learnt about SystemJS, Babel & [Polyfills](https://polyfill.io/v2/docs/) for ES6
+ - Polyfills gives very good coverage for all ES6 features in old browsers
+
+### Day 16: 30 May 2017
+ 
+ 
+ 
