@@ -17,6 +17,13 @@
 
   const people = listPeople();
 
+	console.group('listPeople');
+  console.log(people.next());
+	console.log(people.next());
+	console.log(people.next());
+	console.log(people.next());
+  console.groupEnd('listPeople');
+
   const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879 },
     { first: 'Isaac', last: 'Newton', year: 1643 },
@@ -36,6 +43,11 @@
 
   const inventorGen = loop(inventors);
 
+	console.group('inventors');
+  for (const item of inventors) {
+		console.log(inventorGen.next().value);
+  }
+  console.groupEnd('inventors');
 
 </script>
 </body>
