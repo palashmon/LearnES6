@@ -21,12 +21,12 @@
     console.groupCollapsed('fetching wes');
     const wes = yield ajax('https://api.github.com/users/wesbos');
     console.log(wes);
-		console.groupEnd('fetching beers');
+		console.groupEnd('fetching wes');
 
     console.groupCollapsed('fetching fat joe');
     const fatJoe = yield ajax('https://api.discogs.com/artists/51988');
     console.log(fatJoe);
-		console.groupEnd('fetching beers');
+		console.groupEnd('fetching fat joe');
   }
 
   const dataGen = steps();
