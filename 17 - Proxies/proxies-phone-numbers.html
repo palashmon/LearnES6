@@ -8,14 +8,21 @@
 <script>
   const phoneHandler = {
     set(target, name, value) {
+	  console.log('Before format:\t', value);
       target[name] = value.match(/[0-9]/g).join('');
+	  console.log('Set:\t\t\t', target[name]);
     },
-    get(target, name) {
+    get(target, name) {	  
       return target[name].replace(/(\d{3})(\d{3})(\d{4})/, '($1)-$2-$3');
     }
   }
 
   const phoneNumbers = new Proxy({}, phoneHandler);
+  
+  console.group('Proxies');
+  phoneNumbers.work = '+234 -567-4545'
+  console.log('Get:\t\t\t', phoneNumbers.work);
+  console.groupEnd('Proxies');
 </script>
 </body>
 </html>

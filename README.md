@@ -131,6 +131,14 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Simple use case for Subclassing built-in classes and DOM [here](https://pbs.twimg.com/media/DBAfi7pUIAAupmH.jpg)
 
 ### Day 16: 30 May 2017
+**Thoughts:**  
+ - Completed Module #16 - Generators
+ - Learnt about Generators function, which returns a Generator object. Using it for ajax flow control (awesome stuff)
+ - Simple use-case for [`Generators`](https://pbs.twimg.com/media/DBFCKe-VoAEiVxr.jpg) 
  
- 
+ ### Day 17: 01 June 2017
+**Thoughts:**
+ - Learnt about ES6 Proxies and its various use cases.
+ - It provide JavaScript with an intercession API, enabling us to trap or intercept all of the operations on a target object and modify how this target operates
+
  
