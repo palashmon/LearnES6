@@ -136,9 +136,15 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Learnt about Generators function, which returns a Generator object. Using it for ajax flow control (awesome stuff)
  - Simple use-case for [`Generators`](https://pbs.twimg.com/media/DBFCKe-VoAEiVxr.jpg) 
  
- ### Day 17: 01 June 2017
+### Day 17: 01 June 2017
 **Thoughts:**
  - Learnt about ES6 Proxies and its various use cases.
  - It provide JavaScript with an intercession API, enabling us to trap or intercept all of the operations on a target object and modify how this target operates
 
- 
+### Day 18: 05 June 2017
+**Thoughts:**
+ - Completed Module #18 - Sets and WeakSets
+ - The `Set` object lets us store unique values of any type, whether primitive values or object references.
+ - The `WeakSet` object lets us store weakly held objects in a collection. 
+ - If there is no other reference to an object stored in the `WeakSet`, they can be garbage collected.
+ - Also, `WeakSet` are not enumerable

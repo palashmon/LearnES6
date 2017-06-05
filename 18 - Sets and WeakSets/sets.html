@@ -11,14 +11,20 @@
   people.add('Snickers');
   people.add('Kait');
 
+  console.group('people');
   for (const person of  people) {
     console.log(person);
   }
+  console.groupEnd('people');
 
   const students = new Set(['Wes', 'Kara', 'Tony']);
 
   const dogs = ['Snickers', 'Sunny'];
+  
+  console.group('dogSet');
   const dogSet = new Set(dogs);
+  console.log(dogSet);  
+  console.groupEnd('dogSet');
 
 </script>
 </body>
