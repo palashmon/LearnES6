@@ -148,3 +148,10 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - The `WeakSet` object lets us store weakly held objects in a collection. 
  - If there is no other reference to an object stored in the `WeakSet`, they can be garbage collected.
  - Also, `WeakSet` are not enumerable
+ 
+### Day 19: 06 June 2017
+**Thoughts:**  
+ - Completed Module #19 - Map and Weak Map
+ - A `Map` object holds key-value pairs.
+ - The `Map` object iterates its elements in insertion order — a `for...of` loop returns an array of `[key, value]` for each iteration.
+ - The `WeakMap` object is a collection of key/value pairs in which the keys are weakly referenced.

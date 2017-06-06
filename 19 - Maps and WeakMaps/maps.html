@@ -12,12 +12,16 @@
   dogs.set('Sunny', 2);
   dogs.set('Hugo', 10);
 
+  console.group('forEach');
   dogs.forEach((val, key) => console.log(val, key));
-
+  console.groupEnd('forEach');
+  
+  console.group('For...of');
   for (const [key, val] of dogs) {
     console.log(key, val);
   }
-
+  console.groupEnd('For...of');
+  
 </script>
 </body>
 </html>

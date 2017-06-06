@@ -24,10 +24,12 @@
 
   buttons.forEach(button => {
     clickCounts.set(button, 0);
+	
     button.addEventListener('click', function() {
       const val = clickCounts.get(this);
       clickCounts.set(this, val + 1);
-      console.log(clickCounts);
+      const counts = Array.from(clickCounts).map(v => v[1]);	  
+      console.log(counts);
     });
   });
 </script>
