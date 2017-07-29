@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>typeof with var vs let/const</title>
+</head>
+<body>
+<script>
+  
+  // With `let` and `const` in ES6, it's no longer safe to check for an identifier's existence using `typeof`
+  // Let us try with `var` first
+  function getValue(){
+    console.log(typeof name)
+    var name = 'pal';
+  }
+  
+  getValue(); // Returns `undefined`, no reference error
+  
+  // Let us try with `let` now
+  function getAge(){
+    console.log(typeof age)
+    let age = '22';
+  }
+  
+  getAge(); // Uncaught ReferenceError: age is not defined
+  
+</script>
+</body>
+</html>
