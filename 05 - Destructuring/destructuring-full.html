@@ -1,0 +1,107 @@
+//----------------------------------------------------------------------------------------------------------
+// Basic syntax
+//----------------------------------------------------------------------------------------------------------
+var a, b, rest;
+[a, b] = [10, 20];
+console.log(a);   // 10
+console.log(b);   // 20
+
+[a, b, ...rest] = [10, 20, 30, 40];
+console.log(a);     // 10
+console.log(b);     // 20
+console.log(rest);  // [30, 40]
+
+
+//----------------------------------------------------------------------------------------------------------
+// Uses only left-hand side of the assignment
+//----------------------------------------------------------------------------------------------------------
+var x = [1, 2, 3, 4, 5];
+var [y, z] = x;
+console.log(y);   // 1
+console.log(z);   // 2
+
+
+//----------------------------------------------------------------------------------------------------------
+// Array destructuring
+//----------------------------------------------------------------------------------------------------------
+
+// Basic variable assignment, instead of doing this
+//---------------------------------------------------------------------------------
+var foo = [1, 2];
+var one = foo[0]; 
+var	two = foo[1];
+console.log(one);   // 1
+console.log(two);   // 2
+
+// We can assign values directly in one line like
+//---------------------------------------------------------------------------------
+var [one, two] = foo;
+console.log(one);   // 1
+console.log(two);   // 2
+
+// A variable can be assigned a default, 
+// in the case that the value got from the array is `undefined`
+//---------------------------------------------------------------------------------
+var foo = [1];
+var [one, three = 3] = foo;   // foo[1] here is `undefined` but we still got 3 as we have set a default value
+console.log(one);   // 1
+console.log(three); // 3
+
+// We can easily swap variables, so instead of doing this
+//---------------------------------------------------------------------------------
+var a = 1, b = 2;
+var tmp;
+tmp = a;
+a = b;
+b = tmp;
+console.log(a);   // 2
+console.log(b);   // 1
+
+// We can swap values in one destructuring expression
+var a = 1, b = 2;
+[a, b] = [b, a];
+console.log(a); // 2
+console.log(b); // 1
+
+
+//----------------------------------------------------------------------------------------------------------
+// Object destructuring
+//----------------------------------------------------------------------------------------------------------
+
+// Basic assignment, instead of doing this for every object property
+//---------------------------------------------------------------------------------
+var obj = { num: 2, isValid: true};
+var num = obj.num;
+var isValid = obj.isValid;
+
+console.log(num);       // 2
+console.log(isValid);   // true
+
+// We can assign values directly in one line like
+//---------------------------------------------------------------------------------
+var obj = { num: 52, isValid: false};
+var { num, isValid } = obj;
+
+console.log(num);       // 52
+console.log(isValid);   // false
+
+// Assignment without declaration
+//---------------------------------------------------------------------------------
+({num, isValid} = { num: 44, isValid: true});   // The ( ) around the assignment statement is required syntax in this case
+console.log(num);       // 44
+console.log(isValid);   // true
+
+// Assigning to new variable names
+//---------------------------------------------------------------------------------
+var obj = { num: 22, isValid: false};
+var { num: n, isValid: v } = obj;
+
+console.log(n);   // 22
+console.log(v);   // false
+
+// Default values
+//---------------------------------------------------------------------------------
+var {num = 10, isValid = false} = {num: 50};
+
+console.log(num); 		  // 50
+console.log(isValid); 	// false
