@@ -1,29 +1,33 @@
-/***
-The `for...of` statement creates a loop iterating over iterable objects (including Array, Map, Set, String, TypedArray, arguments object 
-and so on), invoking a custom iteration hook with statements to be executed for the value of each distinct property.
-**/
+<script>
 
-// Iterating over an Array
-//---------------------------------------------------
-const values = [10, 20, 30];
+  /***
+  The `for...of` statement creates a loop iterating over iterable objects (including Array, Map, Set, String, TypedArray, arguments object 
+  and so on), invoking a custom iteration hook with statements to be executed for the value of each distinct property.
+  **/
 
-for (const value of values) {
-  console.log(value);
-}
-// 10
-// 20
-// 30
+  // Iterating over an Array
+  //---------------------------------------------------
+  const values = [10, 20, 30];
 
-
-// Iterating over arguments object
-//---------------------------------------------------
-function getArgs(){
-  for (let argument of arguments) {
-    console.log(argument);
+  for (const value of values) {
+    console.log(value);
   }
-}
+  // 10
+  // 20
+  // 30
 
-getArgs(1, 2, 3)
-// 1
-// 2
-// 3
+
+  // Iterating over arguments object
+  //---------------------------------------------------
+  function getArgs(){
+    for (let argument of arguments) {
+      console.log(argument);
+    }
+  }
+
+  getArgs(1, 2, 3)
+  // 1
+  // 2
+  // 3
+
+</script>
