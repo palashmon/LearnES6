@@ -1,0 +1,34 @@
+<script>
+
+  // An array like object
+  const values = { length: 2, 0: 'a', 1: 'b' };
+
+  // for-of only works with iterable values
+  for (const v of values) { 
+      console.log(v);   // TypeError: values[Symbol.iterator] is not a function
+  }
+
+  const arr = Array.from(values);
+  for (const x of arr) { // arr variable is iterable now..
+      console.log(x);
+  }
+  // Output:
+  // a
+  // b
+  
+  // Turn values into an Array and also inherit all of Array’s methods
+  const num = [];
+  num.push(1);
+  num.push(2);
+  num.push(3);
+  console.log(num);
+  // Output:
+  // [1, 2, 3]
+  
+  // or we can do this easily using Array.of()
+  const numEasy = Array.of(1, 2, 3);
+  console.log(numEasy);
+  // Output:
+  // [1, 2, 3]
+  
+</script>
