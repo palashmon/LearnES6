@@ -1,0 +1,24 @@
+<script>
+  
+  // We can use the spread operator to pass an array of values to be used as parameters to a function
+  const a = Math.max(1, 3, 6, 2);
+  console.log(a)
+  // Output:
+  // 6
+  
+  // We can pass an array also to this function like
+  const arr = [1, 3, 6, 2];
+  const b = Math.max(...arr);   // <-- Using spread operator here
+  console.log(b)
+  // Output:
+  // 6
+  
+  // Yes, this can also be done using apply like
+  const c = Math.max.apply(null, array);
+  console.log(c)
+  // Output:
+  // 6
+  
+  // But using spread version is quite shorter one
+  
+</script>
