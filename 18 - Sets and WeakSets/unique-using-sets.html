@@ -1,0 +1,22 @@
+<script>
+  
+  // Get unique values in an array using sets
+  var values = [1, 1, true, true, 'palash', 'palash'];
+  var unique = [...new Set(values)];
+  // Output:
+  // [1, true, "palash"]
+  
+  // Cons
+  // This does not works for nested arrays like
+  var values = [[1], [1]];
+  var unique = [...new Set(values)]
+  // Output:
+  // [Array(1), Array(1)]
+  
+  // Or nested objects inside array also
+  var values = [{a: 1}, {a: 1}];
+  var unique = [...new Set(values)]
+  // Output:
+  // [{…}, {…}]
+  
+</script>
