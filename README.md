@@ -162,3 +162,4 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Updated for ES7/ES2016 and ES8/ES2017 including Async+Await, Babel 7 and more!
  - Started looking into it from today.
  - Started with native promises and its use-cases.
+ - Also looked into creating custom promises.
