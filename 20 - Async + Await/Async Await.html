@@ -17,20 +17,43 @@
             });
         }
 
-        async function go() {
-            console.log(`Starting...`);
+        // A generic catch error function
+        // which can be used for multiple async/await functions
+        function catchErrors(fn) {
+            return function (...args) {
+                return fn(...args).catch((err) => {
+                    console.error('Ohhhh nooo!!!!!');
+                    console.error(err);
+                });
+            }
+        }
+
+        async function go(name, last) {
+            console.log(`Starting for ${name} ${last}!`);
             const res = await breathe(1000);
             console.log(res);
             const res2 = await breathe(500);
             console.log(res2);
-            const res3 = await breathe(750);
+            const res3 = await breathe(350);
             console.log(res3);
             const res4 = await breathe(900);
             console.log(res4);
             console.log('end');
         }
 
-        go();
+
+
+        // One more function for testing catch error
+        async function rejected(name, last) {
+            const res = await Promise.reject(new Error('This is not cool...'));
+            console.log(res);
+        }
+
+        const wrappedFunction = catchErrors(go);
+        wrappedFunction('Wes', 'Bos');
+
+        const wrappedFunction2 = catchErrors(rejected);
+        wrappedFunction2();
     </script>
 </body>
 
