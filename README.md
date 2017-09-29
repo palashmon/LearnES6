@@ -163,3 +163,8 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Started looking into it from today.
  - Started with native promises and its use-cases.
  - Also looked into creating custom promises.
+
+ ### Day 21: 29 Sep 2017
+**Thoughts:**
+ - Today I reviewed the Async+Await once more.
+ - Also, looked into a generic way for error handling async functions.
