@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Async Await - Multiple Promises</title>
+</head>
+
+<body>
+    <p><em>Please have a look at the JavaScript Console</em> 💁</p>
+    <script>
+        const p1 = Promise.resolve(3);
+        const p2 = 1337;
+        const p3 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 1500, 'foo');
+        });
+
+        (async () => {
+            const values = await Promise.all([p1, p2, p3]);
+            console.log(values); // [3, 1337, "foo"]
+        })()
+    </script>
+</body>
+
+</html>
