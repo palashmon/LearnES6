@@ -164,7 +164,16 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Started with native promises and its use-cases.
  - Also looked into creating custom promises.
 
- ### Day 21: 29 Sep 2017
+### Day 21: 29 Sep 2017
 **Thoughts:**
  - Today I reviewed the Async+Await once more.
  - Also, looked into a generic way for error handling async functions.
+
+### Day 22: 30 Sep 2017
+**Thoughts:**
+ - Today I looked into using multiple promises.
+ - Looked into one more use case for [`Promise.all()`][Promise-all]
+ - Learned about how we can promisify functions so that we can use Async+Await on the them.
+
+ <!-- Links here -->
+ [Promise-all]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
