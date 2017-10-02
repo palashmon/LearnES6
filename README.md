@@ -180,6 +180,8 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - Today I looked into some new & future language additions
  - Looked into Class properties
  - Also, looked into ES8 [`padStart`][string-padStart] and [`padEnd`][string-padEnd]
+ - ES7 Exponentiation Operator
+ - Trailing commas (sometimes called "final commas") in literals
 
 <!-- Links here -->
 [promise-all]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
