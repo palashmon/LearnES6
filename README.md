@@ -172,8 +172,16 @@ Completed Module #11 - Symbols (Newest primitive data type)
 ### Day 22: 30 Sep 2017
 **Thoughts:**
  - Today I looked into using multiple promises.
- - Looked into one more use case for [`Promise.all()`][Promise-all]
+ - Looked into one more use case for [`Promise.all()`][promise-all]
  - Learned about how we can promisify functions so that we can use Async+Await on the them.
 
- <!-- Links here -->
- [Promise-all]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+### Day 23: 02 Oct 2017
+**Thoughts:**
+ - Today I looked into some new & future language additions
+ - Looked into Class properties
+ - Also, looked into ES8 [`padStart`][string-padStart] and [`padEnd`][string-padEnd]
+
+<!-- Links here -->
+[promise-all]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+[string-padStart]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+[string-padEnd]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd
