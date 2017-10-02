@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trailing Comma</title>
+</head>
+
+<body>
+    <p><em>Please have a look at the JavaScript Console</em> 💁</p>
+    <script>
+        /**
+         * JavaScript has allowed trailing commas in array literals since the beginning,
+         * and later added them to object literals (ECMAScript 5)
+         * and most recently (ECMAScript 2017) to function parameters.
+        */
+
+        // Trailing commas in literals
+        const names = [
+            'wes',
+            'kait',
+            'lux',
+            'poppy',
+        ];
+
+        console.log(names);
+        console.log(names.length);
+
+        // Starting with ECMAScript 5, trailing commas in object literals are legal as well
+        const people = {
+            wes: 'Cool',
+            kait: 'EVen Cooler!',
+            lux: 'Coolest',
+            poppy: 'Smallest',
+            snickers: 'Bow wow',
+        }
+
+        // Trailing commas in functions
+        // ECMAScript 2017 allows trailing commas in function parameter lists
+        function family(
+            mom,
+            dad,
+            children,
+            dogs,
+        ) {
+        }
+
+        function f(p, ) { }
+        (p, ) => { };
+
+        // The trailing comma also works with method definitions for classes or objects
+        class C {
+            one(a, ) { }
+            two(a, b, ) { }
+        }
+
+        var obj = {
+            one(a, ) { },
+            two(a, b, ) { },
+        };
+
+        // Function calls
+        // The following function invocation pairs are legal and equivalent to each other
+        f(p);
+        f(p, );
+
+        Math.max(10, 20);
+        Math.max(10, 20, );
+
+        // Trailing commas in destructuring
+        // A trailing comma is also allowed on the left-hand side when using destructuring assignment
+        // array destructuring with trailing comma
+        [a, b,] = [1, 2];
+
+        // object destructuring with trailing comma
+        var o = {
+            p: 42,
+            q: true,
+        };
+        var { p, q, } = o;
+    </script>
+</body>
+
+</html>
