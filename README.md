@@ -183,6 +183,12 @@ Completed Module #11 - Symbols (Newest primitive data type)
  - ES7 Exponentiation Operator
  - Trailing commas (sometimes called "final commas") in literals
 
+### Day 24: 04 Oct 2017
+**Thoughts:**
+ - Today I looked into use cases of `Object.entries()` and `Object.values()`
+ - Learned about how it can be used in specific scenarios.
+ - Fnially finished the course :tada:
+
 <!-- Links here -->
 [promise-all]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 [string-padStart]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
